@@ -98,7 +98,7 @@ const getAuthSig = async () => {
   return authSig;
 };
 
-const go = async () => {
+const main = async () => {
   const client = new LitJsSdk.LitNodeClient({
     litNetwork: "manzano",
   });
@@ -125,6 +125,6 @@ const go = async () => {
   process.exit(0);
 };
 
-go()
+main()
   .catch(console.error)
   .finally(() => process.exit(0));
